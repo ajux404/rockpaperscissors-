@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>Rock Paper Scissors</p>
+
+  <button class="rock" onclick="
+    pl='rock';
+    cp=Math.random();
+    if (cp<=0.3 && cp>=0) {
+      
+      cp='rock';
+
+    }
+
+    else if (cp<=0.6 && cp>0.3) {
+
+      cp='paper';
+
+    }
+    else {
+
+      cp='scissors';
+
+    }
+    
+    console.log(cp);
+    
+    if (cp==='paper') {
+
+      console.log('L');
+      alert('You Lost, Computer chose paper');
+
+    }
+
+    else if (cp===pl) {
+
+      console.log('draw');
+      alert('Its a Draw! Computer chose Rock');
+
+    }
+    else{
+      console.log('w');
+      alert('You Won! Computer chose Scissors...')
+    }
+    ">
+  <img src="rock.jpeg" class="rock-icon"></button>
+
+
+  <button class="rock" onclick="
+  pl='paper';
+  cp=Math.random();
+  if (cp<=0.3) {
+      cp='rock'
+    }
+    else if (cp<=0.6) {
+      cp='paper'
+    }
+    else {
+      cp='scissors'
+    } 
+    console.log(cp);
+    
+    if (cp==='scissors') {
+
+    console.log('L');
+    alert('You Lost, Computer chose scissors');
+
+    }
+
+    else if (cp===pl) {
+
+    console.log('draw');
+    alert('Its a Draw! Computer chose Paper');
+
+    }
+    else{
+    console.log('w');
+    alert('You Won! Computer chose Rock...')
+    }
+    
+    "><img src="paper.jpeg" class="rock-icon"></button>
+
+
+
+  <button class="rock" onclick="
+  pl='scissors';
+  cp=Math.random();
+  if (cp<=0.3) {
+      cp='rock'
+    }
+    else if (cp<=0.6) {
+      cp='paper'
+    }
+    else {
+      cp='scissors'
+    }
+  console.log(cp);
+  if (cp==='rock') {
+
+  console.log('L');
+  alert('You Lost, Computer chose rock');
+
+  }
+
+  else if (cp===pl) {
+
+  console.log('draw');
+  alert('Its a Draw! Computer chose Scissors');
+
+  }
+  else{
+  console.log('w');
+  alert('You Won! Computer chose Paper...')
+  }
+  "><img src="sc.jpeg" class="rock-icon"></button>
+
+  <script>
+    let pl=0;
+    let cp=0;
+    //Math.random generate random numbers b/w 0-1
+  </script>
+</body>
+</html>

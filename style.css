@@ -1,0 +1,39 @@
+body{
+  padding-left: 35%;
+}
+
+.rock{
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  border-radius: 300px;
+  width: 130px;
+  height: 130px;
+  position: relative;
+ 
+}
+
+p{
+  font-size: 50px;
+  font-family:fantasy;
+
+}
+
+.rock-icon{
+  width: 112px;
+  height: 110px;
+  border-radius: 300px;
+  position: absolute;
+  left: 9.5px;
+  top: 10px;
+}
+
+
+.rock-icon:hover{
+  opacity: 0.8;
+}
+
+.rock:hover {
+  background-color: rgb(229, 229, 229);
+
+}
